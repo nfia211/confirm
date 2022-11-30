@@ -419,7 +419,6 @@ void MainWindow::outFile(){
 
 void MainWindow::on_equal_clicked()
 {
-    std::cout<<"equal"<<"\n";
     std::cout<<input->equalpairs[curPairIdx][0]<<","<<input->equalpairs[curPairIdx][1]<<"\n";
     equalpairs.push_back(input->equalpairs[curPairIdx]);
     updateEqual();
@@ -437,7 +436,6 @@ void MainWindow::on_equal_clicked()
 
 void MainWindow::on_inequal_clicked()
 {
-    std::cout<<"inequal"<<"\n";
     inequalpairs.push_back(input->equalpairs[curPairIdx]);
     updateEqual();
     updateInEqual();
@@ -454,7 +452,6 @@ void MainWindow::on_inequal_clicked()
 
 void MainWindow::on_unknown_clicked()
 {
-    std::cout<<"unknown"<<"\n";
     unknownpairs.push_back(input->equalpairs[curPairIdx]);
     updateEqual();
     updateInEqual();
